@@ -5,14 +5,51 @@ theme: gaia
 
 # Slide 1
 
-## Dude man
+- Ljud och vågformer
+- Oscillatorer
+- Control voltage
+- Filter
+- Gate
+- Envelop Generator
+- Sequencer
+- Länkar och resurser
+- Demo
 
 ---
 
-# Slide 2
+# Ljud och vågformer
 
-Does it work?
 
-# Slide 3
+---
 
-What the heck
+# Oscillatorer
+
+---
+
+# Control voltage
+
+---
+
+# Filter
+
+---
+
+# Gate
+
+---
+
+# Envelop Generator
+
+---
+
+# Sequencer
+
+---
+
+# Länkar och resurser
+- VCV Rack - Gratis modularsynthmjukvara
+- 
+
+---
+
+# Demo

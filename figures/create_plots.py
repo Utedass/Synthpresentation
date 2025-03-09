@@ -29,7 +29,7 @@ d = triangle(x,5)
 
 y1 = c
 m = a
-y2 = vca(y1,m,1)
+y2 = vca(y1,m,0.2)
 
 #plt.subplot(1, 3, 1)
 plt.plot(x, y1, label="input")
