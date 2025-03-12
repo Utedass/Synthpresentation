@@ -1,41 +1,47 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-def sine(x, frec, phase = 0):
+def sine(x, frec, phase = 0, amplitude = 2, offset = 0):
     rad = x * (2*np.pi*frec)
-    y = np.sin(rad + phase/360*2*np.pi)
+    y = amplitude/2 * np.sin(rad + phase/360*2*np.pi) + offset
     return y
 
-def saw(x, frec, min = -1, max = 1):
+def saw(x, frec, amplitude = 2, offset = 0):
     period = 1/frec
-    y = (max-min) * (x / period - np.floor(x/period + 1/2)) + max - (max-min)/2
+    y = amplitude * (x / period - np.floor(x/period + 1/2)) + offset 
     return y
 
-def triangle(x, frec):
+def triangle(x, frec, amplitude = 2, offset = 0):
     period = 1/frec
-    y = 2 * (2 * np.abs(x / period - np.floor(x/period + 1/2))) - 1
+    y = amplitude * (2 * np.abs(x / period - np.floor(x/period + 1/2))) - amplitude/2 + offset
+    return y
+
+def pwm(x, frec, pwm = 0.5, amplitude = 2, offset = 0):
+    period = 1/frec
+    y = amplitude * (np.floor(x / period) - np.floor(x/period - pwm)) - amplitude/2 + offset
     return y
 
 def vca(i, cv, depth):
     y = i * (1-depth + depth*cv)
     return y
 
-x = np.linspace(0, 1, 2000)
+x = np.linspace(0, 3, 2000)
 
-a = saw(x, 2, max=1, min=-1)
-b = 0*x
-c = sine(x, 50, 180)
-d = triangle(x,5)
+freq = 2
 
-y1 = c
-m = a
-y2 = vca(y1,m,0.2)
+mod = x / 5 + 0.25
 
-#plt.subplot(1, 3, 1)
-plt.plot(x, y1, label="input")
-#plt.subplot(1, 3, 2)
-plt.plot(x, y2, label="output")
-#plt.subplot(1, 3, 3)
-plt.plot(x, m, label="cv")
-plt.legend(loc="upper left")
+a = sine(x, freq, amplitude=0.9, offset = 3)
+b = triangle(x,freq, amplitude=0.9, offset = 2)
+c = saw(x, freq, amplitude=0.9, offset = 1)
+d = pwm(x, freq, amplitude=0.9, offset = 0, pwm = mod)
+
+plt.plot(x, a)
+plt.plot(x, b)
+plt.plot(x, c)
+plt.plot(x, d)
+
+ax = plt.gca()
+ax.set_facecolor('#fff8e2')
+
 plt.show()
