@@ -117,6 +117,8 @@ section::after {
 # Gate & Envelop Generator (EG)
 
 - Gate: Signal som indikerar "ton på" eller anslag
+- Aktiv så länge som "tangenten" är nedtryckt
+- Trigger: Signal precis som Gate, men enbart en kort puls
 - Går att få ut från klaviatur eller sequencer
 - Envelop Generator - En CV-källa för att forma ljud
 - Gate kan användas för att starta en envelop-cykel
@@ -148,6 +150,7 @@ ul {
 - [Winterbloom - Discord](https://discord.gg/UpfqghQ) - Discordkanal med trevlig atmosfär och massa inspirerande DIY:are
 - [Moritz Klein - Youtube](https://www.youtube.com/@MoritzKlein0/videos) - Många DIY-designer och pedagogiska videor
 - [Modular Grid](https://modulargrid.net/e/modules/browser) - Databas fullspäckad med info om "alla" moduler som finns. Man kan även planera sitt rack.
+- [Modular synthesis Explained](https://youtu.be/cWslSTTkiFU?si=XNqCw8Mf3C-B1Egh) - Andrew Huang förklarar modularsynthar från grunden och bra demos
 - [Jegatron - Modular Synthesizers](https://wiki.jegatron.se/doku.php?id=modular_synthesizers:modular_synthesizers) - Min egen samling av länkar och information
 
 ---
