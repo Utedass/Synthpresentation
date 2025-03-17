@@ -8,6 +8,11 @@ style: |
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
   }
+  .columns3 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
 ---
 
 <style>
@@ -98,8 +103,6 @@ section::after {
 - Roligast på vågor med mycket frekvensinnehåll
 - LP, lågpass är vanligt
 
-<audio src="" controls />
-
 ---
 
 # Control Voltage - CV
@@ -131,6 +134,65 @@ section::after {
 - Genererar en sekvens av CV
 - Kan generera Gate signal på alla eller specifika steg
 - Kan vara kvantetiserande
+
+---
+
+# Andra slags moduler
+
+<style scoped>
+ul {
+    font-size: 20px;
+}
+</style>
+<div class="columns3">
+<div>
+<ul>
+
+<li> VCA </li>
+<li> Mixer </li>
+<li> MIDI Interface </li>
+<li> Delay </li>
+<li> Reverb / Echo </li>
+<li> Ring Modulator </li>
+<li> Clock Generator </li>
+<li> Clock divider </li>
+<li> Noise </li>
+<li> S/H - Sample & Hold </li>
+
+</ul>
+</div>
+<div>
+<ul>
+
+<li> Multieffekter </li>
+<li> Visuella effekter </li>
+<li> Attenuverter </li>
+<li> Quantizer </li>
+<li> Sampler </li>
+<li> Distorsion </li>
+<li> Compressor </li>
+<li> Slew Limiter </li>
+<li> Wave Shaper </li>
+<li> Trummor </li>
+
+</ul>
+</div>
+<div>
+<ul>
+
+<li> Equalizer </li>
+<li> Envelope Follower </li>
+<li> Phase Shifter </li>
+<li> Tuner </li>
+<li> Aritmetiska </li>
+<li> Logiska </li>
+<li> Utility </li>
+<li> Blanka paneler </li>
+<li> Special </li>
+
+</ul>
+</div>
+</div>
 
 ---
 
