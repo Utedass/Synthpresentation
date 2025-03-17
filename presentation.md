@@ -33,14 +33,14 @@ section::after {
 <li> Synthesizers </li>
 <li> Ljud och vågformer </li>
 <li> Oscillatorer </li>
-<li> Control voltage </li>
 <li> Filter </li>
-<li> Gate </li>
+<li> Control voltage </li>
+<li> Gate & Envelop Generator </li>
 </ul>
 </div>
 <ul>
-<li> Envelop Generator </li>
 <li> Sequencer </li>
+<li> Andra slags moduler </li>
 <li> Länkar och resurser </li>
 <li> Demo </li>
 </ul>
