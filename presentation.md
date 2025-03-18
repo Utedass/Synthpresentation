@@ -21,7 +21,19 @@ section::after {
 }
 </style>
 
+<style scoped>
+h1 {
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    display: inline-block;
+    border-radius: 0.3em;
+    padding: 0.2em 0.4em;
+}
+</style>
+
 # Det är synd att inte syntha
+
+![bg](img/modlur.png)
 
 ---
 
@@ -62,6 +74,8 @@ section::after {
 
 - Enskilda funktioner per modul
 - Kopplas ihop med patchkablar
+- Monteras ofta i rack
+  ![height:9cm](img/module1.png)![height:9cm](img/module2.png) ![height:9cm](img/rack1.png)
 
 ---
 
@@ -69,7 +83,10 @@ section::after {
 
 - Enskilda funktioner per modul
 - Kopplas ihop med patchkablar
+- Monteras ofta i rack
 - Den som har flest moduler när den dör vinner
+
+![height:6cm](img/mayhem.png)
 
 ---
 
@@ -218,3 +235,5 @@ ul {
 ---
 
 # Demo
+
+![bg height:15cm](img/väska.png)
